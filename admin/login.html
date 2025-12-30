@@ -1,1 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Login | Tasnaahub</title>
+</head>
+<body>
 
+<h2>Admin Login</h2>
+<input type="password" id="pwd" placeholder="Password">
+<button onclick="login()">Login</button>
+
+<script>
+function login() {
+  if (document.getElementById("pwd").value === "tasnaa@123") {
+    localStorage.setItem("admin", "true");
+    window.location.href = "dashboard.html";
+  } else {
+    alert("Invalid password");
+  }
+}
+</script>
+
+</body>
+</html>
