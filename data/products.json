@@ -1,14 +1,18 @@
 [
   {
-    "name": "Women Kurti",
-    "price": "₹1299"
+    "name": "Poonam Sarees",
+    "price": "₹250"
   },
   {
-    "name": "Men Shirt",
-    "price": "₹999"
+    "name": "women's leggins",
+    "price": "₹250"
   },
   {
-    "name": "Kids Dress",
-    "price": "₹799"
+    "name": "Ladies nighty(feeding type)",
+    "price": "₹250"
+  }
+   {
+    "name": "Ladies nighty",
+    "price": "₹250"
   }
 ]
