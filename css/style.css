@@ -1,1 +1,23 @@
+body {
+  font-family: Arial;
+  padding: 20px;
+}
 
+header {
+  background: #000;
+  color: white;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+}
