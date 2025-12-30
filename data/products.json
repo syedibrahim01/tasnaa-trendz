@@ -7,12 +7,12 @@
   {
     "name": "Poonam Sarees",
     "price": "₹250",
-    "image": "images/poonam-saree1.webp"
+    "image": "images/ponnamsaree1.webp"
   },
   {
     "name": "Women's Leggings",
     "price": "₹250",
-    "image": "images/leggings.jpg"
+    "image": "images/womens-leggings.jpg"
   },
   {
     "name": "Ladies Nighty (Feeding Type)",
@@ -22,6 +22,6 @@
   {
     "name": "Ladies Nighty",
     "price": "₹250",
-    "image": "images/ladies-nighty.jpg"
+    "image": "images/ladies-nighty.webp"
   }
 ]
