@@ -1,27 +1,27 @@
 [
   {
     "name": "Poonam Sarees",
-    "price": "₹250"
-    "image": "images/poonam sarre.webp"
+    "price": "₹250",
+    "image": "images/poonam-saree.webp"
   },
-   {
+  {
     "name": "Poonam Sarees",
-    "price": "₹250"
-    "image": "images/ponnamsaree1.webp"
+    "price": "₹250",
+    "image": "images/poonam-saree1.webp"
   },
   {
-    "name": "women's leggins",
-    "price": "₹250"
-    "image": "images/leggins.jpg"
+    "name": "Women's Leggings",
+    "price": "₹250",
+    "image": "images/leggings.jpg"
   },
   {
-    "name": "Ladies nighty(feeding type)",
-    "price": "₹250"
-    "image": "images/Feedingtype1.jpg"
-  }
-   {
-    "name": "Ladies nighty",
-    "price": "₹250"
-    "image": "images/womens nighty.jpg"  
+    "name": "Ladies Nighty (Feeding Type)",
+    "price": "₹250",
+    "image": "images/feeding-nighty.jpg"
+  },
+  {
+    "name": "Ladies Nighty",
+    "price": "₹250",
+    "image": "images/ladies-nighty.jpg"
   }
 ]
