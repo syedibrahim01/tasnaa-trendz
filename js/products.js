@@ -1,27 +1,26 @@
-console.log("products.js loaded");
-
-fetch("./data/products.json")
-  .then(res => {
-    console.log("Fetch response:", res.status);
-    return res.json();
-  })
-  .then(data => {
-    console.log("Products data:", data);
-
+fetch("/tasnaahub/data/products.json")
+  .then(res => res.json())
+  .then(products => {
     let html = "";
-    data.forEach(p => {
+
+    products.forEach(p => {
       html += `
         <div class="card">
+          <img src="/tasnaahub/${p.image}" alt="${p.name}">
           <h3>${p.name}</h3>
           <p>${p.price}</p>
+          <a class="btn"
+             href="https://wa.me/917550237469"
+             target="_blank">
+             Order on WhatsApp
+          </a>
         </div>
       `;
     });
 
     document.getElementById("product-list").innerHTML = html;
   })
-  .catch(err => {
-    console.error("ERROR:", err);
+  .catch(() => {
     document.getElementById("product-list").innerHTML =
-      "<p style='color:red;text-align:center;'>Failed to load products</p>";
+      "<p style='color:red;text-align:center;'>Products loading failed</p>";
   });
