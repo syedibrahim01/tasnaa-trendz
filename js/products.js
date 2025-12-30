@@ -10,7 +10,7 @@ fetch("/tasnaahub/data/products.json")
           <h3>${p.name}</h3>
           <p>${p.price}</p>
           <a class="btn"
-             href="https://wa.me/917550237469"
+             href="https://wa.me/919566022719"
              target="_blank">
              Order on WhatsApp
           </a>
@@ -19,8 +19,5 @@ fetch("/tasnaahub/data/products.json")
     });
 
     document.getElementById("product-list").innerHTML = html;
-  })
-  .catch(() => {
-    document.getElementById("product-list").innerHTML =
-      "<p style='color:red;text-align:center;'>Products loading failed</p>";
   });
+
