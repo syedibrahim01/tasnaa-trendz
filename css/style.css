@@ -125,3 +125,19 @@ footer {
 .card .btn:hover {
   background: #1ebe5d;
 }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card img {
+  height: 260px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card h3 {
+  min-height: 48px;
+}
