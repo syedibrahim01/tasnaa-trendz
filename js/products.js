@@ -1,25 +1,30 @@
-const whatsappNumber = "917550237469"; // replace with your number
-
 fetch("data/products.json")
-  .then(res => res.json())
-  .then(data => {
+  .then(response => {
+    if (!response.ok) {
+      throw new Error("Failed to load products.json");
+    }
+    return response.json();
+  })
+  .then(products => {
     let html = "";
-    data.forEach(p => {
-      const message = encodeURIComponent(
-        `Hello Tasnaahub,%0AI'm interested in:%0AProduct: ${p.name}%0APrice: ${p.price}`
-      );
-
+    products.forEach(p => {
       html += `
         <div class="card">
-          <img src="${p.image}" width="180">
+          <img src="${p.image}" alt="${p.name}">
           <h3>${p.name}</h3>
           <p>${p.price}</p>
-          <a class="btn" target="_blank"
-             href="https://wa.me/${whatsappNumber}?text=${message}">
+          <a class="btn"
+             href="https://wa.me/917550237469"
+             target="_blank">
              Order on WhatsApp
           </a>
         </div>
       `;
     });
     document.getElementById("product-list").innerHTML = html;
+  })
+  .catch(error => {
+    document.getElementById("product-list").innerHTML =
+      "<p style='color:red;text-align:center;'>Products loading failed</p>";
+    console.error(error);
   });
