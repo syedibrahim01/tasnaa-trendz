@@ -1,1 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Dashboard</title>
+</head>
+<body>
 
+<script>
+if (localStorage.getItem("admin") !== "true") {
+  window.location.href = "login.html";
+}
+</script>
+
+<h2>Welcome Admin – Tasnaahub</h2>
+<p>Manage products here (future enhancement)</p>
+
+<button onclick="logout()">Logout</button>
+
+<script>
+function logout() {
+  localStorage.removeItem("admin");
+  window.location.href = "login.html";
+}
+</script>
+
+</body>
+</html>
