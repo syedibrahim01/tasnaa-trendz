@@ -1,4 +1,4 @@
-const whatsappNumber = "91XXXXXXXXXX"; // replace with your number
+const whatsappNumber = "917550237469"; // replace with your number
 
 fetch("data/products.json")
   .then(res => res.json())
