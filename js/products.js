@@ -1,23 +1,39 @@
-fetch("/TASNAA TRENDZ/data/products.json")
-  .then(res => res.json())
-  .then(products => {
-    let html = "";
+const products = [
+  {
+    name: "Poonam Saree",
+    price: "₹250",
+    image: "images/saree.jpg"
+  },
+  {
+    name: "Women's Leggings",
+    price: "₹250",
+    image: "images/leggings.jpg"
+  },
+  {
+    name: "Ladies Nighty (Feeding)",
+    price: "₹250",
+    image: "images/nighty1.jpg"
+  },
+  {
+    name: "Ladies Nighty",
+    price: "₹250",
+    image: "images/nighty2.jpg"
+  }
+];
 
-    products.forEach(p => {
-      html += `
-        <div class="card">
-          <img src="/TASNAA TRENDZ/${p.image}" alt="${p.name}">
-          <h3>${p.name}</h3>
-          <p>${p.price}</p>
-          <a class="btn"
-             href="https://wa.me/+917550237469"
-             target="_blank">
-             Order on WhatsApp
-          </a>
-        </div>
-      `;
-    });
+const productList = document.getElementById("product-list");
 
-    document.getElementById("product-list").innerHTML = html;
-  });
+products.forEach(product => {
+  const card = document.createElement("div");
+  card.className = "product-card";
+
+  card.innerHTML = `
+    <img src="${product.image}" alt="${product.name}">
+    <h3>${product.name}</h3>
+    <p>${product.price}</p>
+  `;
+
+  productList.appendChild(card);
+});
+
 
