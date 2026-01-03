@@ -1,4 +1,4 @@
-fetch("/tasnaahub/data/products.json")
+fetch("/TASNAA TRENDZ/data/products.json")
   .then(res => res.json())
   .then(products => {
     let html = "";
