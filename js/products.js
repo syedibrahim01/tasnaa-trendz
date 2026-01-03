@@ -1,39 +1,39 @@
-const products = [
-  {
-    name: "Poonam Saree",
-    price: "₹250",
-    image: "images/saree.jpg"
-  },
-  {
-    name: "Women's Leggings",
-    price: "₹250",
-    image: "images/leggings.jpg"
-  },
-  {
-    name: "Ladies Nighty (Feeding)",
-    price: "₹250",
-    image: "images/nighty1.jpg"
-  },
-  {
-    name: "Ladies Nighty",
-    price: "₹250",
-    image: "images/nighty2.jpg"
-  }
-];
+document.addEventListener("DOMContentLoaded", () => {
 
-const productList = document.getElementById("product-list");
+  const products = [
+    {
+      name: "Poonam Saree",
+      price: "₹250",
+      image: "images/poonaam-saree.webp"
+    },
+    {
+      name: "Women's Leggings",
+      price: "₹250",
+      image: "images/womens-leggings.jpg"
+    },
+    {
+      name: "Ladies Nighty (Feeding)",
+      price: "₹250",
+      image: "images/feeding-nighty.jpg"
+    },
+    {
+      name: "Ladies Nighty",
+      price: "₹250",
+      image: "images/ladies-nighty.webp"
+    }
+  ];
 
-products.forEach(product => {
-  const card = document.createElement("div");
-  card.className = "product-card";
+  const productList = document.getElementById("product-list");
 
-  card.innerHTML = `
-    <img src="${product.image}" alt="${product.name}">
-    <h3>${product.name}</h3>
-    <p>${product.price}</p>
-  `;
+  products.forEach(product => {
+    const card = document.createElement("div");
+    card.className = "product-card";
+    card.innerHTML = `
+      <img src="${product.image}" alt="${product.name}">
+      <h3>${product.name}</h3>
+      <p>${product.price}</p>
+    `;
+    productList.appendChild(card);
+  });
 
-  productList.appendChild(card);
 });
-
-
