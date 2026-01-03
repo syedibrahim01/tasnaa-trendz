@@ -6,11 +6,11 @@ fetch("/tasnaahub/data/products.json")
     products.forEach(p => {
       html += `
         <div class="card">
-          <img src="/tasnaahub/${p.image}" alt="${p.name}">
+          <img src="/TASNAA TRENDZ/${p.image}" alt="${p.name}">
           <h3>${p.name}</h3>
           <p>${p.price}</p>
           <a class="btn"
-             href="https://wa.me/919566022719"
+             href="https://wa.me/+917550237469"
              target="_blank">
              Order on WhatsApp
           </a>
