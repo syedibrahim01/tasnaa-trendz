@@ -2,9 +2,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const products = [
     {
-      name: "Poonam Saree",
-      price: "₹250",
-      image: "images/poonam-saree.webp"
+     name: "Poonam Saree",
+     price: "₹250",
+     image: "images/poonam-saree.webp"
+    }
     },
     {
       name: "Women's Leggings",
